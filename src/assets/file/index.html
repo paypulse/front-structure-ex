@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=1280, user-scalable=no">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
+  <title>하늘끝에는 무엇이 있을까_상_7</title>
+</head>
+
+<body>
+  <div id="root">
+    <!-- 이미지 -->
+    <img src="bg.png" id="bg" class="background">
+    <img src="ans1.png" id="ans1" class="ans">
+    <img src="ans2.png" id="ans2" class="ans">
+    <img src="ans3.png" id="ans3" class="ans">
+
+    <img src="popup.png" id="popup" class="popup">
+
+    <img src="../page1.png" id="page1_img" class="page">
+    <img src="../page2.png" id="page2_img" class="page">
+    <img src="../page3.png" id="page3_img" class="page">
+    <img src="../page4.png" id="page4_img" class="page">
+    <img src="../page5.png" id="page5_img" class="page">
+    <img src="../page6.png" id="page6_img" class="page">
+    <img src="../page7.png" id="page7_img" class="page">
+    <!-- //이미지 -->
+
+    <!-- 터치 -->
+    <div id="click1" class="click1 click" onclick="_iclick(1,'o',1);"></div>
+    <div id="click2" class="click1 click" onclick="_iclick(1,'x',0);"></div>
+    <div id="click3" class="click2 click" onclick="_iclick(2,'o',0);"></div>
+    <div id="click4" class="click2 click" onclick="_iclick(2,'x',1);"></div>
+    <div id="click5" class="click3 click" onclick="_iclick(3,'o',1);"></div>
+    <div id="click6" class="click3 click" onclick="_iclick(3,'x',0);"></div>
+
+    <div id="j1" class="jclick" onclick="_play_jimun(1);"></div>
+    <div id="j2" class="jclick" onclick="_play_jimun(2);"></div>
+    <div id="j3" class="jclick" onclick="_play_jimun(3);"></div>
+
+    <div id="play_audio" onclick="_play_audio('a_intro');"></div>
+    <div id="play_popup" onclick="_play_audio('a_popup');"></div>
+
+    <div id="click_pop" onclick="popUp();"></div>
+    <div id="popClose" onclick="popClose();"></div>
+
+    <div id="page1" onclick="goPage('../1/index.html');"></div>
+    <div id="page2" onclick="goPage('../2/index.html');"></div>
+    <div id="page3" onclick="goPage('../3/index.html');"></div>
+    <div id="page4" onclick="goPage('../4/index.html');"></div>
+    <div id="page5" onclick="goPage('../5/index.html');"></div>
+    <div id="page6" onclick="goPage('../6/index.html');"></div>
+    <div id="page7" onclick="goPage('../7/index.html');"></div>
+    <!-- //터치 -->
+
+    <!-- 효과 -->
+    <div id="star"></div>
+    <div id="flowers" style="display: none;position: absolute;top: 0;left: 0;width: 1280px;height: 800px;background :rgba(0,0,0,0.3);"></div>
+    <!-- //효과 -->
+  </div>
+
+  <!-- 오디오 -->
+  <audio id="a1" src="a1.mp3"></audio>
+  <audio id="a2" src="a2.mp3"></audio>
+  <audio id="a3" src="a3.mp3"></audio>
+
+  <audio id="a_intro" src="intro.mp3"></audio>
+  <audio id="a_popup" src="a_pop.mp3"></audio>
+
+  <!-- 오디오 공통 파일 id="fin"은 마지막 페이지에만 추가 -->
+  <audio id="a_correct" src="/web/resource/mp3ex/correct.mp3"></audio>
+  <audio id="a_incorrect" src="/web/resource/mp3ex/incorrect.mp3"></audio>
+
+  <audio id="anext" src="/web/resource/mp3ex/next.mp3"></audio>
+  <audio id="fin" src="/web/resource/mp3ex/finish.mp3"></audio>
+  <!-- // 오디오 공통 파일 id="fin"은 마지막 페이지에만 추가 -->
+
+  <audio id="a_o" src="o.mp3"></audio>
+  <audio id="a_x" src="x.mp3"></audio>
+  <!-- //오디오 -->
+
+  <!-- 스크립트 -->
+  <script src="../jquery-3.3.1.min.js"></script>
+  <script src="../jquery-ui/jquery-ui.min.js"></script>
+  <script src="../jquery-ui/jquery.ui.touch-punch.min.js"></script>
+  <!-- <script src="/web/resource/img/flower/ending.js"></script> -->
+  <script src="http://file.total-system.co.kr/js/completedClass_bt.js"></script>
+  <script src="ki.js"></script>
+  <script type="text/javascript">
+    //right_url = "../7/index.html";
+  </script>
+  <!-- //스크립트 -->
+</body>
+
+</html>

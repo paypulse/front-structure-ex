@@ -29,7 +29,7 @@ export default new Vuex.Store({
           }).then(response =>{
             //file Download path
             this.state.filePath = response.data.filePath;
-            resolve("SUCESS");
+            resolve("SUCCESS");
           }).catch(error =>{
             reject(error);
           });
