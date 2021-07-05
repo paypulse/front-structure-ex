@@ -1,6 +1,6 @@
 <template>
   <div>
-     <input type="button" value="Button Click"/>
+     <input type="button" value="Button Click" v-on:click="viewHtml"/>
 
   </div>
 </template>
@@ -8,7 +8,7 @@
 <script>
 import Vue from 'vue'
 import VueCordova from 'vue-cordova'
-import cors from "cors";
+import cors from "cors"
 
 Vue.use(VueCordova)
 Vue.use(cors)
@@ -53,7 +53,7 @@ export default {
     // });
 
     //File DownloadTest
-    this.fileDownload();
+    //this.fileDownload();
 
 
 
@@ -107,6 +107,11 @@ export default {
           console.log(error);
           alert(error);
         })
+    },
+    viewHtml: function(){
+      alert('test');
+      this.$router.push("/firstView");
+
     }
   }
 }

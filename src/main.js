@@ -7,9 +7,23 @@ import axios from 'axios'
 import VueCordova from 'vue-cordova'
 
 //resource
-import '../src/assets/css/index.css'
-import '../src/assets/js/ki.js'
+//images
+import '../src/assets/images/ans1.png'
+import '../src/assets/images/ans2.png'
+import '../src/assets/images/ans3.png'
+import '../src/assets/images/bg.png'
+import '../src/assets/images/popup.png'
+import '../src/assets/images/ui-icons_444444_256x240.png'
+import '../src/assets/images/ui-icons_555555_256x240.png'
+import '../src/assets/images/ui-icons_777620_256x240.png'
+import '../src/assets/images/ui-icons_777777_256x240.png'
+import '../src/assets/images/ui-icons_cc0000_256x240.png'
+import '../src/assets/images/ui-icons_ffffff_256x240.png'
 
+//CSS
+import '../src/assets/css/index.css'
+//js
+// import '../src/assets/js/ki.js'
 
 axios.defaults.baseURL = 'http://192.168.50.213:8082'
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
